@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.prueba.proyecto.Inicio">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1">
+
+            <EditText
+                android:layout_width="187dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/edtBuscar"
+                android:text="Buscar"
+                android:layout_weight="0.85" />
+
+            <ImageButton
+                android:layout_width="49dp"
+                android:layout_height="match_parent"
+                android:id="@+id/imageButton5"
+                android:layout_gravity="right"
+                android:src="@android:drawable/ic_search_category_default" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Eventos"
+                android:id="@+id/textView49" />
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/horizontalScrollView" >
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1">
+
+                <ImageButton
+                    android:layout_width="112dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/imbPorto"
+                    android:src="@drawable/puertosoho" />
+
+                <ImageButton
+                    android:layout_width="87dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/imbApple"
+                    android:src="@drawable/apple" />
+
+                <ImageButton
+                    android:layout_width="97dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/imbBdm"
+                    android:src="@drawable/bdm" />
+
+                <ImageButton
+                    android:layout_width="104dp"
+                    android:layout_height="99dp"
+                    android:id="@+id/imbKravi"
+                    android:src="@drawable/kravi" />
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tragos"
+            android:id="@+id/textView50" />
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/horizontalScrollView2" >
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:layout_weight="0.06">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton"
+                    android:src="@drawable/agua" />
+
+                <ImageButton
+                    android:layout_width="96dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/imageButton3"
+                    android:layout_gravity="right"
+                    android:src="@drawable/coca" />
+
+                <ImageButton
+                    android:layout_width="94dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/imageButton2"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/quilmes" />
+
+                <ImageButton
+                    android:layout_width="105dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/imageButton4"
+                    android:src="@drawable/sprite" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>
